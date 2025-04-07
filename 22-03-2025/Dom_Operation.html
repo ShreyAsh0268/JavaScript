@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Operattion</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        #first{
+            margin-top: 10%;
+        }
+    </style>
+    <script type="text/javascript">
+        function performAddition(){
+            document.getElementById("third").value=""+(parseInt(document.getElementById("first").value)+parseInt(document.getElementById("second").value));
+        }
+        function performMul(){
+            document.getElementById("third").value=""+(parseInt(document.getElementById("first").value)*parseInt(document.getElementById("second").value));
+        }
+        function performDiv(){
+            document.getElementById("third").value=""+(parseInt(document.getElementById("first").value)/parseInt(document.getElementById("second").value));
+        }
+        function performSub(){
+            document.getElementById("third").value=""+(parseInt(document.getElementById("first").value)-parseInt(document.getElementById("second").value));
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="f" id="first" value=""/>
+    <br><br>
+    <input type="text" name="s" id="second" value=""/>
+    <br><br>
+    <input type="text" name="t" id="third" value=""/>
+    <br><br>
+    <input type="button" name="first" value="Add" onclick="performAddition()"/>
+    <br><br>
+    <input type="button" name="first" value="Mul" onclick="performMul()"/>
+    <br><br>
+    <input type="button" name="first" value="Div" onclick="performDiv()"/>
+    <br><br>
+    <input type="button" name="first" value="Sub" onclick="performSub()"/>
+    <br><br>
+</body>
+</html>
